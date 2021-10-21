@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/budget", {
+mongoose.connect("mongodb+srv://pdxKxETAFcfN1lDF:pdxKxETAFcfN1lDF@cluster0.5bzqy.mongodb.net/budget" || "mongodb://localhost/budget", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
